@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Confirmation</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #7fdbda, #b2f7ef, #e0f7fa, #d3f7d1); /* Gradient from aqua to light green */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    text-align: center;
+    background-color: #ffcc80; /* Light orange */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+    max-width: 80%; /* Limit width */
+    margin: auto; /* Center horizontally */
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  h1 {
+    color: #e91e63; /* Pink */
+    margin-bottom: 20px;
+    font-size: 2em;
+    animation: confirmAnimation 2s ease-in-out; /* Scaling animation */
+  }
+
+  @keyframes confirmAnimation {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  p {
+    color: #333; /* Dark text */
+    font-size: 1.2em;
+    animation: slideIn 1s ease-in-out; /* Slide in animation */
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Media query for responsiveness */
+  @media only screen and (max-width: 600px) {
+    .container {
+      max-width: 90%; /* Adjust max-width for smaller screens */
+    }
+
+    h1 {
+      font-size: 1.5em; /* Adjust font size */
+    }
+
+    p {
+      font-size: 1em; /* Adjust font size */
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Message Sent!</h1>
+  <p>We've received your message and will get back to you soon.</p>
+</div>
+
+<script>
+  setTimeout(function() {
+    window.location.href = 'index.html'; // Redirect after 5 seconds
+  }, 5000);
+</script>
+</body>
+</html>

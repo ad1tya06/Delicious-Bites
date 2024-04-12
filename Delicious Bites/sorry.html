@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant - Table Not Available</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f1e4; /* Set background color */
+        }
+        .container {
+            text-align: center;
+            margin-top: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .message {
+            font-size: 24px;
+            color: #4e342e; /* Set text color */
+            background-color: #ffd54f; /* Set box background color */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        .emoji {
+            font-size: 36px;
+            margin: 10px;
+        }
+        @media only screen and (max-width: 600px) {
+            .message {
+                font-size: 18px;
+            }
+            .emoji {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            <div class="emoji">🙁</div> <!-- Emojis -->
+            <p>We apologize for the inconvenience,</p>
+            <p>Tables are currently not available.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    setTimeout(function() {
+      window.location.href = 'index.html'; // Redirect after 5 seconds
+    }, 5000);
+  </script>
+  </body>
+  </html>
+  

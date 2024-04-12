@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| About</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: end;
+            height: 65px;
+            padding: 0 7vw;
+            background-color: rgb(248, 232, 217);
+            border-bottom: 2px solid rgb(252, 196, 124);
+            box-shadow: 0 2px 15px rgb(253, 124, 124);
+        }
+
+        .header i {
+            font-size: 25px;
+            margin-left: -60px;
+            cursor: pointer;
+        }
+
+        .dir {
+            display: block;
+        }
+
+        .logo img {
+            width: 300px;
+            mix-blend-mode: darken;
+            cursor: pointer;
+        }
+
+        .logo img:hover {
+            width: 320px;
+            transition: all 0.2s;
+        }
+
+        .logo {
+            display: bl;
+            justify-items: flex-end;
+            margin-right: -95px;
+            padding-top: 20px;
+        }
+
+        .red:hover,
+        .red2:hover {
+            color: rgba(165, 42, 42, 0.783);
+        }
+
+        .red2 {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+
+        .home {
+            display: flex;
+            background-color: rgba(200, 202, 193, 0.288);
+            height: 200px;
+            justify-content: center;
+        }
+
+        .head h1:hover {
+            cursor: pointer;
+            text-shadow: 8px 8px 15px;
+            font-size: 42px;
+            transition: all 0.2s;
+        }
+
+        .head h1 {
+            padding-top: 90px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 40px;
+            color: rgb(253, 124, 124);
+            text-shadow: 5px 5px 12px;
+        }
+
+        .back {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(212, 151, 102, 0.575);
+            height: 100vh;
+            padding-top: 60px;
+        }
+
+        .about-box {
+            display: flex;
+            background-color: rgba(232, 212, 195, 0.954);
+            height: 400px;
+            width: 1400px;
+            flex-direction: column;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 10px 10px 15px rgba(212, 151, 102, 0.575);
+            border-radius: 40px;
+            overflow: hidden;
+        }
+
+        .about-box p {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        .chef-vic {
+            display: flex;
+            align-items: center;
+            padding: 25px 20px;
+            background-color: rgb(255, 219, 185);
+            border-radius: 0 100px 0 0;
+            margin-top: 40px;
+            width: 80%;
+        }
+
+        .chef-vic div {
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+            flex: 0.5;
+            height: 27px;
+            overflow: hidden;
+        }
+
+        .chef-vic div i,
+        .chef-vic div h4 {
+            font-size: 27px;
+            margin-right: 8px;
+        }
+
+        .chef-vic div h4 {
+            color: red;
+        }
+
+        .chef-vic div p {
+            font-size: 20px;
+            color: rgb(211, 150, 85);
+            margin-bottom: 20px;
+        }
+
+        /* Resposive */
+        @media only screen and (max-width: 768px) {
+            .header i {
+                font-size: 25px;
+                margin-left: 0px;
+                cursor: pointer;
+            }
+
+            .logo {
+                display: none;
+            }
+
+            .dir {
+                margin-right: -10px;
+                font-size: 13px;
+            }
+
+            .about-box {
+                background-color: rgba(232, 212, 195, 0.954);
+                width: 500px;
+                margin-top: 30px;
+                box-shadow: 10px 10px 15px rgba(212, 151, 102, 0.575);
+                border-radius: 20px;
+                overflow: hidden;
+                height: 600px;
+            }
+
+            .back {
+                height: 710px;
+                padding: 20px;
+            }
+
+            .chef-vic div i,
+            .chef-vic div h4 {
+                font-size: 17px;
+                margin-right: 0px;
+            }
+
+            .chef-vic div h4 {
+                color: red;
+            }
+
+            .chef-vic div p {
+                font-size: 10px;
+                color: rgb(211, 150, 85);
+                margin-bottom: 20px;
+            }
+
+            .chef-vic {
+                width: 100%;
+                border-radius: 0 0 0 0;
+                padding: 10px 10px;
+            }
+
+            .about-box p {
+                font-size: medium;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="./"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="dir">
+            <h2><a href="" class="red">Home</a>/<a href="#" class="red2">About</a></h2>
+        </div>
+        <div class="logo">
+            <img src="https://see.fontimg.com/api/renderfont4/gxgyE/eyJyIjoiZHciLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiJ9/RGVsaWNpb3VzIEJpdGVz/airtravelerspersonaluse-bdit.png"
+                alt="Logo">
+        </div>
+    </div>
+
+    <div class="home">
+        <div class="head">
+            <h1>About us/</h1>
+        </div>
+    </div>
+
+    <div class="back">
+        <div class="about-box">
+            <h1>Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restoran</h1>
+            <p> where culinary excellence meets unmatched hospitality. Nestled in the heart of <b>Udhampur</b>, our
+                restaurant offers a diverse menu of mouthwatering dishes crafted with the finest ingredients sourced
+                locally. Whether you're craving a hearty breakfast, a leisurely lunch, or an intimate dinner, our
+                passionate chefs and attentive staff are committed to providing you with an unforgettable dining
+                experience.</p>
+            <p> Join us and indulge in a gastronomic journey that tantalizes the senses and leaves you craving for
+                more.</p>
+            <div class="chef-vic">
+                <div>
+                    <i class="fa-solid fa-hand-peace"></i>
+                    <h4>
+                        911
+                    </h4>
+                    <p>
+                        Likes
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-trophy"></i>
+                    <h4>
+                        911
+                    </h4>
+                    <p>
+                        Trophics won
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
