@@ -1,0 +1,212 @@
+.bubbly-button {
+    font-family: "Helvetica", "Arial", sans-serif;
+    display: block;
+    font-size: 1em;
+    padding: 1em 2em;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #6d59e1d7;
+    color: #000000;
+    font-weight: 600;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px #6d59e1d7;
+}
+
+
+.bubbly-button:active {
+    transform: scale(0.9);
+    background-color: #6d59e1d7;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b3795d5e;
+    margin: 0;
+    padding: 0;
+}
+
+
+.total {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    padding-left: 20px;
+    border: 6px solid rgb(191, 200, 179);
+    border-radius: 60px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(203, 143, 117, 0.575);
+    height: auto;
+    border-radius: 60px;
+    width: 90%;
+    margin: 0 auto;
+    border: 10px solid rgb(191, 200, 179);
+}
+
+header {
+    display: flex;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    gap: 470px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.container div h1 {
+    padding: 30px;
+    color: rgb(98, 37, 24);
+    text-shadow: 2px 2px 9px rgba(231, 104, 24, 0.658);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    margin-bottom: -40px;
+}
+
+.fries {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 60px;
+    gap: 70px;
+    
+}
+
+.food-box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(239, 228, 219, 0.995);
+    height: 300px;
+    margin-left: 20px;
+    width: 350px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    box-shadow: 10px 10px 15px rgba(212, 151, 102, 0.575);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.foodimg img {
+    width: 300px;
+    margin: -20px 0px -70px 25px;
+    height: 290px;
+    mix-blend-mode: darken;
+
+}
+
+header h2 {
+    text-align: left;
+}
+
+.food_name {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+
+.food-box:hover {
+    margin-top: 60px;
+    transition: all 0.2s;
+    margin-left: 40px;
+    height: 310px;
+    box-shadow: 20px 20px 12px rgba(212, 151, 102, 0.575);
+}
+
+.food-box:hover .food_name {
+    margin-top: 50px;
+    font-size: 20px;
+    text-decoration: underline;
+    transition: all 0.2s;
+}
+
+.food-box span input[type="checkbox"] {
+    cursor: pointer;
+    width: 18px;
+    border-radius: 3px;
+    height: 18px;
+}
+
+.food-box span {
+    padding-top: 0px;
+}
+
+span {
+    color: red;
+    position: relative;
+    text-align: center;
+    margin-top: -40px;
+    padding-bottom: 40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        height: 100%;
+    }
+
+    .container div h1 {
+        padding-bottom: 70px;
+        margin-top: -10px;
+        font-size: 30px;
+    }
+
+    .fries {
+        display: flex;
+        scale: 0.8;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 0px;
+        background-color: rgba(212, 151, 102, 0.575);
+    }
+    .container div h1{
+        padding-bottom: 0;
+        margin-bottom: -100;
+
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 14px;
+        gap: 0px;
+    }
+    .food-box{
+        margin: 0;
+    }
+    .food-box:hover{
+        margin-top: 0;
+        transition: 0;
+        margin-left: 0;
+        height: 300px;
+        box-shadow: 20px 20px 12px rgba(212, 151, 102, 0.575);
+    }
+    header h1 {
+        text-align: center;
+        margin-top: -120px;
+        padding-bottom: 40px;
+    }
+
+    header h2 {
+        text-align: center;
+        margin-top: 80px;
+
+    }
+}

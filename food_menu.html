@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+     <meta
+        charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Food Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-content: end;
+            height: 65px;
+            padding: 0 7vw;
+            background-color: rgb(249, 204, 161);
+            border-bottom: 2px solid rgb(252, 196, 124);
+            box-shadow: 0 2px 15px rgb(253, 124, 124);
+        }
+
+        .header i {
+            font-size: 25px;
+            margin-left: -60px;
+            cursor: pointer;
+        }
+
+        .dir {
+            display: block;
+        }
+
+        .logo img {
+            width: 300px;
+            mix-blend-mode: darken;
+            cursor: pointer;
+        }
+
+        .logo img:hover {
+            width: 320px;
+            transition: all 0.2s;
+        }
+
+        .logo {
+            display: flex;
+            justify-items: flex-end;
+            margin-right: -95px;
+            padding-top: 20px;
+        }
+
+        .red:hover,
+        .red2:hover {
+            color: rgba(165, 42, 42, 0.783);
+        }
+
+        .red2 {
+            text-decoration: underline;
+            text-decoration-color: red;
+        }
+        .back {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(212, 151, 102, 0.575);
+            height: auto;
+        }
+
+        .back div h1 {
+            padding: 30px;
+            color: rgb(98, 37, 24);
+            text-shadow: 2px 2px 9px rgba(231, 104, 24, 0.658);
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+            margin-bottom: -40px;
+        }
+
+        .fries {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 200px;
+            justify-content: space-around;
+        }
+
+        .food-box {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(232, 189, 151, 0.954);
+            height: 300px;
+            margin-left: 20px;
+            width: 300px;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            box-shadow: 10px 10px 15px rgba(212, 151, 102, 0.575);
+            border-radius: 40px;
+            overflow: hidden;
+        }
+
+        .foodimg img {
+            width: 300px;
+            margin: -20px 0px -70px 25px;
+            height: 290px;
+            mix-blend-mode: darken;
+            margin-left: -0px;
+        }
+
+        .food_name {
+            display: flex;
+            justify-content: center;
+            margin: 50px;
+        }
+
+        .food-box:hover {
+            margin-top: 60px;
+            transition: all 0.2s;
+            margin-left: 40px;
+            height: 410px;
+            box-shadow: 20px 20px 12px rgba(212, 151, 102, 0.575);
+        }
+
+        .food-box:hover .link {
+            display: flex;
+            justify-content: center;
+            margin-top: -30px;
+            gap: 40px;
+            transition: all 0.2s;
+        }
+
+        .food-box:hover .food_name {
+            margin-top: 30px;
+            font-size: 14px;
+
+            margin-bottom: 30px;
+            text-decoration: underline;
+            transition: all 0.2s;
+        }
+
+        .food-box:hover .link p {
+            margin: 25px;
+        }
+
+        .food-box:hover .foodimg img {
+            display: flex;
+            justify-content: center;
+            width: 340px;
+            height: 330px;
+            margin-left: -15px;
+
+            transition: all 0.5s;
+
+
+        }
+
+        /* Resposive */
+
+        @media only screen and (max-width: 768px) {
+            .header i {
+                font-size: 25px;
+                margin-left: 0px;
+                cursor: pointer;
+            }
+            .logo {
+                display: none;
+            }
+            .dir {
+                margin-right: -10px;
+                font-size: 13px;
+            }
+
+            .back {
+                height: auto;
+            }
+
+            .back div h1 {
+                padding-bottom: 50px;
+            }
+            .fries:hover{
+                padding-right: 34px;
+            }
+            .fries {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                background-color: rgba(212, 151, 102, 0.575);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="./"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="dir">
+            <h2><a href="" class="red">Home</a>/<a href="#" class="red2">Dishes</a></h2>
+        </div>
+        <div class="logo">
+            <img src="https://see.fontimg.com/api/renderfont4/gxgyE/eyJyIjoiZHciLCJoIjo4MSwidyI6MTI1MCwiZnMiOjY1LCJmZ2MiOiIjMDAwMDAwIiwiYmdjIjoiI0ZGRkZGRiJ9/RGVsaWNpb3VzIEJpdGVz/airtravelerspersonaluse-bdit.png"
+                alt="Logo">
+        </div>
+    </div>
+
+    <div class="back">
+        <div>
+            <h1>
+                FRIES
+            </h1>
+
+        </div>
+        <div class="fries">
+            <div class="food-box">
+                <div class="foodimg">
+                    <img src="https://img.freepik.com/free-photo/fried-potatoes-french-fries-isolated-white-background_123827-26398.jpg?size=626&ext=jpg&ga=GA1.1.1937446577.1707586438&semt=ais"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>Plain Salted Fries</h3>
+                    </div>
+                    <div class="link">
+                        <p>"Delight in our classic, crispy, and perfectly seasoned plain salty fries, a timeless
+                            favorite for any occasion. Enjoy!"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 40px;"
+                        src="https://www.pizzaexpress.com.my/wp-content/uploads/2018/04/peri-chips-1.png"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>Peri Peri Fries</h3>
+                    </div>
+                    <div class="link">
+                        <p>"Spicy peri peri seasoning, crispy fries, tangy aioli dip, deliciously addictive snack."</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 40px;"
+                        src="https://th.bing.com/th?id=OIP.qUUBbuAohWAedGWcA4uaVwAAAA&w=265&h=235&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>cheese fries</h2>
+                    </div>
+                    <div class="link">
+                        <p>Crispy fries topped with melted cheddar cheese, bacon bits, and chives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1>
+                BURGER
+            </h1>
+
+        </div>
+        <div class="fries">
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 40px;"
+                        src="https://thesamosashop.ca/wp-content/uploads/2022/11/Aloo-Tikki-Burger-2.png"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>Alloo Tikki Burger</h3>
+                    </div>
+                    <div class="link">
+                        <p>Spiced potato patty, lettuce, tomato, onion, pickles, chutneys, served on a toasted bun with
+                            fries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 40px;"
+                        src="https://th.bing.com/th/id/OIP.yfXWZKw8ue8hOi83Ip5lKQHaGk?rs=1&pid=ImgDetMain"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>Mexican Burger</h3>
+                    </div>
+                    <div class="link">
+                        <p>"Bold flavors: Spicy beef, guacamole, jalapeño, Pepper Jack, chipotle mayo, tortilla strips."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 60px;" src="https://www.pngmart.com/files/16/Bacon-Cheese-Burger-PNG-Pic.png"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>Paneer Burger</h3>
+                    </div>
+                    <div class="link">
+                        <p>Grilled paneer, tikka masala sauce, lettuce, tomato, onions, mozzarella, jalapeños, chutney.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1>
+                PASTA
+            </h1>
+
+        </div>
+        <div class="fries">
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 30px;"
+                        src="https://www.lemillericette.it/wp-content/uploads/2020/11/SEDANI-ALLARRABBIATA.png"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h4>Arrabbiata Red Pasta</h4>
+                    </div>
+                    <div class="link">
+                        <p>Spaghetti in spicy arrabbiata sauce with fresh basil and Parmesan.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 20px;" src="https://www.pngmart.com/files/21/Alfredo-PNG-Clipart.png" alt="Food img..">
+                    <div class="food_name">
+                        <h4>Alfredo White Pasta</h4>
+                    </div>
+                    <div class="link">
+                        <p>Creamy Alfredo sauce, grilled chicken, mushrooms, spinach, parmesan cheese, fettuccine.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 40px;"
+                        src="https://th.bing.com/th?id=OIP.zVsQK2YyPNfUzmVwTfYfagAAAA&w=301&h=207&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>Mix Sauce Pasta</h3>
+                    </div>
+                    <div class="link">
+                        <p>Savory mix of marinara and Alfredo sauce, with vegetables, penne.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1>
+                PIZZA
+            </h1>
+
+        </div>
+        <div class="fries">
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 40px;"
+                        src="https://th.bing.com/th/id/OIP.Q5-bJXsO6HfQJgyBLAHQ2QHaFF?rs=1&pid=ImgDetMain"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>Margherita Pizza</h3>
+                    </div>
+                    <div class="link">
+                        <p>Fresh basil, sliced tomatoes, mozzarella cheese, olive oil, thin crust, classic Italian
+                            flavors.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 30px;"
+                        src="https://supremepizzaonline.ca/wp-content/uploads/2017/07/BBQ-Chicken-Special-up-1024x1024.jpg"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>Cheese Corn Pizza</h2>
+                    </div>
+                    <div class="link">
+                        <p>Cheese corn pizza: Corn kernels, mozzarella, cheddar, tomato sauce, herbs, thin crust, baked
+                            to perfection.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-box">
+                <div class="foodimg">
+                    <img style="padding: 40px;"
+                        src="https://i.pinimg.com/originals/1c/20/18/1c201876d460a455c741405f5fc4ca08.png"
+                        alt="Food img..">
+                    <div class="food_name">
+                        <h3>Paneer Tikka Pizza</h2>
+                    </div>
+                    <div class="link">
+                        <p>Paneer tikka, tandoori sauce, mozzarella cheese, bell peppers, onions, cilantro, naan crust,
+                            aromatic spices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
